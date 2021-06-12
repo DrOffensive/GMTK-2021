@@ -17,22 +17,35 @@ public class InteractWithObject : MonoBehaviour
         {
             onInteract?.Invoke();
             canInteract = false;
+            interactionButtonScriptable.Value.SetActive(false);
         }
     }
 
 
     private void OnTriggerEnter(Collider other)
     {
+        if(other.CompareTag("Player") == false)
+        {
+            return;
+        }
+
         if(interactionButtonScriptable != null)
         {
             interactionButtonScriptable.Value.SetActive(true);
         }
+
+        
 
         canInteract = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
+        if (other.CompareTag("Player") == false)
+        {
+            return;
+        }
+
         if (interactionButtonScriptable != null)
         {
             interactionButtonScriptable.Value.SetActive(false);

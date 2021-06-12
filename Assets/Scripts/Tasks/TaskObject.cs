@@ -16,11 +16,21 @@ public class TaskObject : MonoBehaviour
     [SerializeField] float maxYOffset = 2f;
     [SerializeField] float timeToReachTarget = 1f;
     [SerializeField] Rigidbody objectRigidbody = null;
+    Collider collider = null;
+
+    private void Awake()
+    {
+        collider = GetComponent<Collider>();
+    }
 
     public void PickUp() {
-        transform.parent = handObjectReference.Value.transform;
-        transform.localPosition = Vector3.zero;
+        transform.SetParent(handObjectReference.Value.transform, true); 
+        transform.localPosition = Vector3.zero;        
         objectRigidbody.isKinematic = true;
+        if(collider!= null)
+        {
+            collider.enabled = false;
+        }
         onPickupEvents?.Invoke();
     }
 

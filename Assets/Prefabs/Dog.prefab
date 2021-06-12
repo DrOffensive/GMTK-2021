@@ -348,4 +348,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   track:
     spline: {fileID: 0}
-  speed: 0.125
+  speed: 25

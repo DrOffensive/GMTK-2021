@@ -10,6 +10,8 @@ public class FollowSpline : MonoBehaviour
 
     [SerializeField] float speed;
 
+    float flatSpeed = 0f;
+
     [System.Serializable]
     public struct CurrentTrack
     {
@@ -33,8 +35,8 @@ public class FollowSpline : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        track.time = track.spline.MoveDistanceAlongSpline(track.time, speed * Time.deltaTime);
+    {        
+        track.time = track.spline.MoveDistanceAlongSpline(track.time, speed/track.spline.SplineLength * Time.deltaTime);
         if (track.time > 1)
             track.time -= 1;
         SnapToPoint(track.time);
