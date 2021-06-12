@@ -8,12 +8,12 @@ public class InputManager : MonoBehaviour
 
     public static float GetUpDownAxis()
     {
-        return Input.GetAxis("Horizontal");
+        return Input.GetAxis("Vertical");
     }
 
     public static float GetLeftRightAxis()
     {
-        return Input.GetAxis("Vertical");
+        return Input.GetAxis("Horizontal");
     }
 
     public static bool GetInteract()
