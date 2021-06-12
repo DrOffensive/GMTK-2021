@@ -8,6 +8,7 @@ public class InteractWithObject : MonoBehaviour
 {
     //Interact Popup
     [SerializeField] UnityEvent onInteract = null;
+    [SerializeField] GameObjectReference interactionButtonScriptable = null;
     bool canInteract = false;
 
     private void Update()
@@ -22,20 +23,26 @@ public class InteractWithObject : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //Show interact popup
-        Debug.Log("Press button now");
+        if(interactionButtonScriptable != null)
+        {
+            interactionButtonScriptable.Value.SetActive(true);
+        }
+
         canInteract = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
-        //FinishShowingInteractPopup
-        Debug.Log("Don't press button now");
+        if (interactionButtonScriptable != null)
+        {
+            interactionButtonScriptable.Value.SetActive(false);
+        }
+
         canInteract = false;
     }
 
     public void OnInteractPopupPressed()
     {
-        onInteract?.Invoke();
+        onInteract?.Invoke();        
     }
 }
