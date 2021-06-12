@@ -1,31 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody))]
 public class TaskObject : MonoBehaviour
 {
     [SerializeField] GameObjectReference handObjectReference = null;
+    [SerializeField] UnityEvent onPickupEvents = null;
+    [SerializeField] UnityEvent onDropEvents = null;
 
     [Header("Throwing properties")]
     [SerializeField] AnimationCurve speedCurve = AnimationCurve.Linear(0f,1f,1f,1f);
     [SerializeField] AnimationCurve yAxisParaboleCurve = AnimationCurve.EaseInOut(0f, 1f, 1f, 1f);
     [SerializeField] float maxYOffset = 2f;
     [SerializeField] float timeToReachTarget = 1f;
-    [SerializeField] Rigidbody rigidbody;
+    [SerializeField] Rigidbody objectRigidbody = null;
 
     public void PickUp() {
         transform.parent = handObjectReference.Value.transform;
         transform.localPosition = Vector3.zero;
+        objectRigidbody.isKinematic = true;
+        onPickupEvents?.Invoke();
+    }
+
+    public void PutInPlace(Transform _target)
+    {
+        transform.parent = _target;
+        transform.localPosition = Vector3.zero;
+        objectRigidbody.isKinematic = true;
+        transform.localPosition = Vector3.zero;
+        onDropEvents?.Invoke();
     }
 
     public void ThrowAtTarget(Transform _target)
     {       
         StartCoroutine(throwByLine(_target.position));
+        onDropEvents?.Invoke();
     }
 
     public void ThrowRandomlyAtTarget(Transform _target)
     {
+        onDropEvents?.Invoke();
         float _xOffset = Random.Range(3f, 5f);
         _xOffset *= Random.Range(0f, 1f) < 0.5 ? -1 : 1;
 
@@ -44,7 +60,7 @@ public class TaskObject : MonoBehaviour
         Vector3 _oldPosition = transform.position;
         Vector3 _newPosition = transform.position;
         transform.parent = null;
-        rigidbody.isKinematic = true;
+        objectRigidbody.isKinematic = true;
 
         while (_time <= 1f)
         {
@@ -58,8 +74,8 @@ public class TaskObject : MonoBehaviour
             yield return null;
         }
 
-        rigidbody.velocity = _lastFramePositionChange;
-        rigidbody.isKinematic = false;        
+        objectRigidbody.velocity = _lastFramePositionChange;
+        objectRigidbody.isKinematic = false;        
     }
 
 }
