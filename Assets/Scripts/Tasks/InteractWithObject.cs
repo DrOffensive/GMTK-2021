@@ -23,12 +23,14 @@ public class InteractWithObject : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //Show interact popup
+        Debug.Log("Press button now");
         canInteract = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
         //FinishShowingInteractPopup
+        Debug.Log("Don't press button now");
         canInteract = false;
     }
 

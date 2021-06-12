@@ -280,8 +280,8 @@ MonoBehaviour:
   SwitchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: 
-  sourceBankPath: 
+  sourceProjectPath: Assets/Plugins/FMOD/WalkingTheDog/WalkingTheDog.fspro
+  sourceBankPath: Assets/Plugins/FMOD/WalkingTheDog/Build
   SourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -314,7 +314,7 @@ MonoBehaviour:
   EnableErrorCallback: 0
   SharedLibraryUpdateStage: 0
   SharedLibraryTimeSinceStart: 4818.6265201
-  HideSetupWizard: 0
+  HideSetupWizard: 1
   Platforms:
   - {fileID: -2893092548856949726}
   - {fileID: -4261669607579436905}
