@@ -39,4 +39,10 @@ public class FollowSpline : MonoBehaviour
             track.time -= 1;
         SnapToPoint(track.time);
     }
+
+    public void SwitchTheTrack(Spline _newSpline)
+    {
+        track.time = 0;
+        track.spline = _newSpline;
+    }
 }
