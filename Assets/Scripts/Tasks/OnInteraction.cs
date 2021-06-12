@@ -12,11 +12,21 @@ public class OnInteraction : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if(other.CompareTag("Player") == false)
+        {
+            return;
+        }
+
         isWithinCorrectZone = true;
     }
 
     private void OnTriggerExit(Collider other)
     {
+        if (other.CompareTag("Player") == false)
+        {
+            return;
+        }
+
         isWithinCorrectZone = false;
     }
 

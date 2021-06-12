@@ -38,9 +38,9 @@ public class TaskObject : MonoBehaviour
     {
         transform.parent = _target;
         transform.localPosition = Vector3.zero;
-        objectRigidbody.isKinematic = true;
         transform.localPosition = Vector3.zero;
-        onDropEvents?.Invoke();
+        objectRigidbody.velocity = Vector3.zero;
+        objectRigidbody.isKinematic = true;
     }
 
     public void ThrowAtTarget(Transform _target)
@@ -48,6 +48,18 @@ public class TaskObject : MonoBehaviour
         StartCoroutine(throwByLine(_target.position));
         onDropEvents?.Invoke();
     }
+
+    public void PutItBack()
+    {
+        StartCoroutine(PutBackAfter(timeToReachTarget * 1.5f));
+    }
+
+    private IEnumerator PutBackAfter(float _time)
+    {
+        yield return new WaitForSeconds(_time);
+        onDropEvents?.Invoke();
+    }
+
 
     public void ThrowRandomlyAtTarget(Transform _target)
     {
