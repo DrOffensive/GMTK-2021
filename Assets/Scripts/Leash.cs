@@ -7,7 +7,7 @@ public class Leash : MonoBehaviour
     Rigidbody Rigidbody => GetComponent<Rigidbody>();
     [SerializeField] Transform target;
     [SerializeField] float distance;
-    private void Update()
+    private void FixedUpdate()
     {
 
         Vector3 line = Rigidbody.position - target.position;
