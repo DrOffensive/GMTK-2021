@@ -7,12 +7,14 @@ public class Leash : MonoBehaviour
     Rigidbody Rigidbody => GetComponent<Rigidbody>();
     [SerializeField] Transform target;
     [SerializeField] float distance;
-    private void LateUpdate()
+    private void Update()
     {
 
         Vector3 line = Rigidbody.position - target.position;
         if (line.magnitude > distance)
-            Rigidbody.position = target.position + (line.normalized * distance);
+            Rigidbody.MovePosition(target.position + (line.normalized * distance));
         
+
+
     }
 }
