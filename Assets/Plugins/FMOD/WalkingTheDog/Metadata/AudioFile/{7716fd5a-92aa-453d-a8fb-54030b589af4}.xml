@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{7716fd5a-92aa-453d-a8fb-54030b589af4}">
+		<property name="assetPath">
+			<value>Audios/Pillow Ripping Apart.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.473922902494331</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5720b6cd-afda-4e1c-b9de-02d7bb557c1e}</destination>
+		</relationship>
+	</object>
+</objects>

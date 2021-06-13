@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{ed3d21e4-e739-4adf-a18d-606d7e184367}">
+		<property name="assetPath">
+			<value>Audios/More Audios/Trashcan Fall.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.8668027210884355</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{5720b6cd-afda-4e1c-b9de-02d7bb557c1e}</destination>
+		</relationship>
+	</object>
+</objects>
