@@ -576,6 +576,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ed585905d1e76a45a06a7467ffb2fd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!59 &90980196 stripped
+HingeJoint:
+  m_CorrespondingSourceObject: {fileID: 5941974563832427020, guid: c2d3aa3f768664e44a47a07e2eb4474b, type: 3}
+  m_PrefabInstance: {fileID: 933181774}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &99468018
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3119,6 +3124,11 @@ SphereCollider:
   m_CorrespondingSourceObject: {fileID: 2425464399550112856, guid: 3d034320e884880428f0eefad65f39eb, type: 3}
   m_PrefabInstance: {fileID: 852445526}
   m_PrefabAsset: {fileID: 0}
+--- !u!59 &467558582 stripped
+HingeJoint:
+  m_CorrespondingSourceObject: {fileID: 3485998448465062983, guid: c2d3aa3f768664e44a47a07e2eb4474b, type: 3}
+  m_PrefabInstance: {fileID: 933181774}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &469314283 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6500414028823135092, guid: 3d034320e884880428f0eefad65f39eb, type: 3}
@@ -3239,6 +3249,11 @@ MonoBehaviour:
   customPoint: 0
   gizmoMode: 2
   debugPoint: 0
+--- !u!59 &475404507 stripped
+HingeJoint:
+  m_CorrespondingSourceObject: {fileID: 1715879597955370290, guid: c2d3aa3f768664e44a47a07e2eb4474b, type: 3}
+  m_PrefabInstance: {fileID: 933181774}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &486905436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4995,6 +5010,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 941d89ad74fca6f428f4126f95c979c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &703582808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4773870566187609606, guid: c2d3aa3f768664e44a47a07e2eb4474b, type: 3}
+  m_PrefabInstance: {fileID: 933181774}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &703582809
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703582808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 564fea2638e347f41b09ada531bc9044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doggo: {fileID: 1700930919}
+  leftLeg:
+    thigh: {fileID: 1457078861}
+    calf: {fileID: 467558582}
+  rightLeg:
+    thigh: {fileID: 90980196}
+    calf: {fileID: 475404507}
+  kickForce: 10000
+  artificialForce: 15
 --- !u!1001 &706717451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10791,6 +10832,11 @@ MonoBehaviour:
 SphereCollider:
   m_CorrespondingSourceObject: {fileID: 2425464399550112856, guid: 3d034320e884880428f0eefad65f39eb, type: 3}
   m_PrefabInstance: {fileID: 157514739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!59 &1457078861 stripped
+HingeJoint:
+  m_CorrespondingSourceObject: {fileID: 1998317790637016387, guid: c2d3aa3f768664e44a47a07e2eb4474b, type: 3}
+  m_PrefabInstance: {fileID: 933181774}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1468652641
 GameObject:
