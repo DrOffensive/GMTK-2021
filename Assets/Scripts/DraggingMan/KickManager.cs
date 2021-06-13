@@ -32,7 +32,7 @@ public class KickManager : MonoBehaviour
     {
         if (InputManager.GetLeftRightAxis() < 0)
             Kick(true);
-        else if(InputManager.GetLeftRightAxis() < 0)
+        else if(InputManager.GetLeftRightAxis() > 0)
             Kick(false);
         else
         {
@@ -47,7 +47,7 @@ public class KickManager : MonoBehaviour
     {
         if (left)
         {
-            Rigidbody.AddForce(doggo.TransformDirection(Vector3.left) * artificialForce);
+            Rigidbody.AddForce(doggo.TransformDirection(Vector3.left) * artificialForce, ForceMode.Impulse);
             leftLeg.thigh.useMotor = true;
             rightLeg.thigh.useMotor = false;
             var motor = leftLeg.thigh.motor;
@@ -63,7 +63,7 @@ public class KickManager : MonoBehaviour
         }
         else
         {
-            Rigidbody.AddForce(doggo.TransformDirection(Vector3.right) * artificialForce);
+            Rigidbody.AddForce(doggo.TransformDirection(Vector3.right) * artificialForce, ForceMode.Impulse);
             leftLeg.thigh.useMotor = false;
             rightLeg.thigh.useMotor = true;
             var motor = rightLeg.thigh.motor;
