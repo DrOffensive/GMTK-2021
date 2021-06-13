@@ -28,9 +28,9 @@ public class FollowSpline : MonoBehaviour
     // Start is called before the first frame update
     void SnapToPoint(float point)
     {
-        var pointOnSpline = track.spline.GetPointOnSpline(track.time);
+        var pointOnSpline = track.spline.GetPointOnSpline(Mathf.Clamp01(track.time));
         transform.position = pointOnSpline.point;
-        transform.rotation = Quaternion.LookRotation(track.spline.Tangent(track.time));
+        transform.rotation = Quaternion.LookRotation(track.spline.Tangent(track.time) * (track.spline.BezierType == BezierType.Quadratic ? -1 : 1));
     }
 
     // Update is called once per frame

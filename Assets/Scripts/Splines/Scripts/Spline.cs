@@ -440,7 +440,10 @@ namespace Splines
         public Vector3 Tangent (float time)
         {
             var segment = GetSegmentTime(time);
-            return Tangent(segment.localTime, segment.index, segment.index + 1 >= points.Length ? 0 : segment.index + 1);
+            if(segment.index + 1 >= points.Length)
+                return Tangent(segment.localTime, segment.index, (segment.index + 1) - points.Length);
+            else
+                return Tangent(segment.localTime, segment.index, segment.index + 1);
         }
 
         public Vector3 Tangent (float time, int start, int end)
@@ -458,9 +461,12 @@ namespace Splines
                     tangent = Utility.GetCubicBezierTangentAtPoint(time, points[start].Position, points[start].HandleA, points[end].HandleB, points[end].Position);
                     break;
             }
-            float distToStart = Vector3.Distance(points[start].Position + tangent, points[start].Position);
-            float distToEnd = Vector3.Distance(points[start].Position + tangent, points[end].Position);
-            return (distToStart < distToEnd) ? -tangent : tangent;
+
+            ///WHY ?
+            //float distToStart = Vector3.Distance(points[start].Position + tangent, points[start].Position);
+            //float distToEnd = Vector3.Distance(points[start].Position + tangent, points[end].Position);
+            //return (distToStart < distToEnd) ? -tangent : tangent;
+            return tangent;
         }
 
         public void PointMoved ()
