@@ -49,5 +49,6 @@ public class MainMenu : MonoBehaviour
         foot2.isKinematic = false;
         doggo.Speed = storedSpeed;
         mainOst.SetActive(true);
+        gameObject.SetActive(false);
     }
 }
