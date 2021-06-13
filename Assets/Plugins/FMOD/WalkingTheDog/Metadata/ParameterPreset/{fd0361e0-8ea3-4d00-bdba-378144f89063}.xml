@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{fd0361e0-8ea3-4d00-bdba-378144f89063}">
+		<property name="name">
+			<value>TransitionTo3</value>
+		</property>
+		<relationship name="folder">
+			<destination>{299fa7ce-4733-42cf-8b94-b17dcdd74960}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{afe0e98a-d776-4ad4-9751-f54907a2e765}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{afe0e98a-d776-4ad4-9751-f54907a2e765}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
