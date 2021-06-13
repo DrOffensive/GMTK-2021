@@ -26,6 +26,9 @@ public class MainMenu : MonoBehaviour
         mainOst.SetActive(false);
         hand.isKinematic = false;
         camFollow.enabled = false;
+        head.isKinematic = true;
+        foot1.isKinematic = true;
+        foot2.isKinematic = true;
         play.onClick.AddListener(Play);
         quit.onClick.AddListener(() => Application.Quit());
     }
