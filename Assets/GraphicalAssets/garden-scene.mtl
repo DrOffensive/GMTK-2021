@@ -1,0 +1,435 @@
+newmtl Grass
+illum 7
+Kd 0 0 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+map_Pm garden-scene/Grass_metallic.png
+adobe_translucence 0
+map_Pr garden-scene/Grass_roughness.png
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd garden-scene/Grass_baseColor.png
+norm garden-scene/Grass_normal.png
+
+newmtl Material de tubo
+illum 7
+Kd 0.815686 0.815686 0.815686
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.503
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+
+newmtl Material de tapa
+illum 7
+Kd 0.886004 0.886004 0.886004
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.5946
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+
+newmtl Material de botella
+illum 7
+Kd 0.14902 0.788235 0.796078
+adobe_interior_color 1 1 1
+Ni 1.45
+adobe_density 0.03
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+
+newmtl Cake
+illum 7
+Kd 0.815686 0.815686 0.815686
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 1
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd garden-scene/Cake_baseColor.png
+
+newmtl Cake 2
+illum 7
+Kd 0.815686 0.815686 0.815686
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 1
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd garden-scene/Cake_baseColor 2.png
+
+newmtl Cake 2 3
+illum 7
+Kd 0.815686 0.815686 0.815686
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 1
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd garden-scene/Cake_baseColor 3.png
+
+newmtl Cake 2 3 4
+illum 7
+Kd 0.815686 0.815686 0.815686
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 1
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd garden-scene/Cake_baseColor 4.png
+
+newmtl Cake 2 3 4 5
+illum 7
+Kd 0.815686 0.815686 0.815686
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 1
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+map_Kd garden-scene/Cake_baseColor 5.png
+
+newmtl Material de mesa
+illum 7
+Kd 0.435294 0.329412 0.007843
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.5
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+
+newmtl Tela
+illum 7
+Kd 0.87451 0.243137 0.611765
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.2
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+
+newmtl Material de papel
+illum 7
+Kd 0.968627 0.968627 0.968627
+adobe_interior_color 1 1 1
+Ni 1
+adobe_density 0
+Tr 0.16
+d 0.84
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+map_Pr garden-scene/Material de papel_roughness.jpg
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+norm garden-scene/Material de papel_normal.jpg
+
+newmtl Material de bolsa
+illum 7
+Kd 0.54902 0.027451 0.184314
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+map_Pr garden-scene/Material de bolsa_roughness.jpg
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+norm garden-scene/Material de bolsa_normal.jpg
+
+newmtl Material de caja
+illum 7
+Kd 0.843137 0.698039 0.32549
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.503
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+norm garden-scene/Material de caja_normal.jpg
+
+newmtl Material de bolsa 2
+illum 7
+Kd 0.639216 0.741176 0.192157
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+map_Pr garden-scene/Material de bolsa_roughness 2.jpg
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+norm garden-scene/Material de bolsa_normal 2.jpg
+
+newmtl Material.013
+illum 7
+Kd 0.357549 0.226397 0.030307
+adobe_interior_color 0.050876 0.050876 0.050876
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.272166
+Ns 16
+Ks 1 1 1
+adobe_glow 0.0153268
+
+newmtl Material.014
+illum 7
+Kd 0.015239 0.3487 0.05051
+adobe_interior_color 0.050876 0.050876 0.050876
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.272166
+Ns 16
+Ks 1 1 1
+adobe_glow 0.0154663
+
+newmtl Material.015
+illum 7
+Kd 0.296468 0.574087 0.48107
+adobe_interior_color 0.050876 0.050876 0.050876
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.272166
+Ns 16
+Ks 1 1 1
+adobe_glow 0.0504404
+
+newmtl White.002
+illum 7
+Kd 0.678431 0.509804 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.6
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+
+newmtl White.001
+illum 7
+Kd 0.14902 0.788235 0.796078
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.6
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+
+newmtl White.003
+illum 7
+Kd 0.588235 0.435294 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.6
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+
+newmtl Mate
+illum 7
+Kd 0.729412 0.729412 0.729412
+adobe_interior_color 1 1 1
+Ni 1.5
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 1
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+
+newmtl White.005
+illum 7
+Kd 0.588235 0.435294 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.6
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+
+newmtl White.006
+illum 7
+Kd 0.588235 0.435294 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.605374
+Ns 16
+Ks 1 1 1
+adobe_glow 0
+
+newmtl WallTileSetTextures
+illum 7
+Kd 0.588235 0.435294 0
+adobe_interior_color 1 1 1
+Ni 1.6
+adobe_density 0
+Tr 0
+d 1
+Ka 0 0 0
+Ke 0 0 0
+Pm 0
+adobe_translucence 0
+Pr 0.6
+Ns 16
+Ks 1 1 1
+adobe_glow 0

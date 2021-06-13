@@ -38,7 +38,7 @@ public class TaskObject : MonoBehaviour
     {
         transform.parent = _target;
         transform.localPosition = Vector3.zero;
-        transform.localPosition = Vector3.zero;
+        transform.localRotation = Quaternion.identity;
         objectRigidbody.velocity = Vector3.zero;
         objectRigidbody.isKinematic = true;
     }
