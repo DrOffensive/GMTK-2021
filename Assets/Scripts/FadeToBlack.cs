@@ -5,15 +5,26 @@ using UnityEngine;
 [RequireComponent(typeof(CanvasGroup))]
 public class FadeToBlack : MonoBehaviour
 {
+
+    public float FadeDuration { set => fadeDuration = value; }
     public static FadeToBlack instance => FindObjectOfType<FadeToBlack>();
 
     [SerializeField] float fadeDuration;
+    [SerializeField] bool startBlack;
 
     public float Alpha => CanvasGroup.alpha;
 
     CanvasGroup CanvasGroup => GetComponent<CanvasGroup>();
 
     Coroutine fade;
+
+    private void Start()
+    {
+        if (startBlack)
+            FadeUp(true);
+        else
+            FadeDown(true);
+    }
 
     public void FadeUp (bool instant = false)
     {
