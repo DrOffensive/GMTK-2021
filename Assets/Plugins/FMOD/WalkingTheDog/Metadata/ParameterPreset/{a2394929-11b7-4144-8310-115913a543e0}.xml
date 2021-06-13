@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{a2394929-11b7-4144-8310-115913a543e0}">
+		<property name="name">
+			<value>TransitionToDeath</value>
+		</property>
+		<relationship name="folder">
+			<destination>{299fa7ce-4733-42cf-8b94-b17dcdd74960}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a2ea267a-e0a9-455b-b02f-17e8f8904b20}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a2ea267a-e0a9-455b-b02f-17e8f8904b20}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
