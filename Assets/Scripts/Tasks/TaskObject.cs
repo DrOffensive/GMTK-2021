@@ -42,6 +42,12 @@ public class TaskObject : MonoBehaviour
         objectRigidbody.velocity = Vector3.zero;
         objectRigidbody.isKinematic = true;
     }
+    
+    public void TurnOffSkybox()
+    {
+        Camera.main.clearFlags = CameraClearFlags.SolidColor;
+        Camera.main.backgroundColor = Color.black;
+    }
 
     public void ThrowAtTarget(Transform _target)
     {       
