@@ -9,6 +9,8 @@ public class FollowSpline : MonoBehaviour
     [SerializeField] CurrentTrack track;
     [SerializeField] Transform doggo;
     [SerializeField] float speed;
+    
+    public float Speed { get => speed; set => speed = value; }
 
     float flatSpeed = 0f;
 
