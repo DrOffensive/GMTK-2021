@@ -502,8 +502,8 @@ MonoBehaviour:
   mainOst: {fileID: 0}
   doggo: {fileID: 0}
   play: {fileID: 2685992646066565067}
-  credits: {fileID: 0}
-  quit: {fileID: 0}
+  credits: {fileID: 5564170177523397844}
+  quit: {fileID: 902518985322135331}
 --- !u!1 &5667894592798382556
 GameObject:
   m_ObjectHideFlags: 0
